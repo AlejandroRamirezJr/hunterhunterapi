@@ -1,0 +1,32 @@
+
+
+{
+    "killua": {
+        "age": "12",
+        "family": "Zoldyck",
+        "specialAbility": "GodSpeed"
+        
+    },
+    "gon": {
+        "age": "12",
+        "family": "Freecess",
+        "abilities": "Jajanken"
+    },
+    "leorio": {
+        "age": "19",
+        "family": "Paradinight",
+        "abilities": "Remote Punch"
+    },
+    "kurapika": {
+        "age": "12",
+        "family": "unknown",
+        "abilities": "Holy Chain"
+    },
+    "hisoka": {
+        "age": "28",
+        "family": "Morse",
+        "abilities": "Bungee Gum"
+    }
+
+}
+
