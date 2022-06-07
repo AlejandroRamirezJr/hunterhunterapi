@@ -4,45 +4,45 @@ const app = express()
 const PORT = 8000
 // const hunters = require("./hunters.json")
 
-// let hunters = {
-//     'killua': {
-//         'name': 'Killua',
-//         'age': 12,
-//         'family': 'Zoldyck',
-//         'specialAbility': 'GodSpeed'
-//     },
-//     'gon': {
-//         'name': 'Gon',
-//         'age': 12,
-//         'family': 'Freecess',
-//         'abilities': 'Jajanken'
-//     },
-//     'leorio': {
-//         'name': 'Leorio',
-//         'age': 19,
-//         'family': 'Paradinight',
-//         'abilities': 'Remote Punch'
-//     },
-//     'kurapika': {
-//         'name': 'Kurapika',
-//         'age': 12,
-//         'family': 'unknown',
-//         'abilities': 'Holy Chain'
-//     },
-//     'hisoka': {
-//         'name': 'Hisoka',
-//         'age': 28,
-//         'family': 'Morow',
-//         'abilities': 'Bungee Gum'
-//     },
-//     'unknown': {
-//         'name': 'unknown',
-//         'age': 'unknown',
-//         'family': 'unknown',
-//         'abilities': 'unkown'
-//     }
+let hunterss = {
+    'killua': {
+        'name': 'Killua',
+        'age': 12,
+        'family': 'Zoldyck',
+        'specialAbility': 'GodSpeed'
+    },
+    'gon': {
+        'name': 'Gon',
+        'age': 12,
+        'family': 'Freecess',
+        'abilities': 'Jajanken'
+    },
+    'leorio': {
+        'name': 'Leorio',
+        'age': 19,
+        'family': 'Paradinight',
+        'abilities': 'Remote Punch'
+    },
+    'kurapika': {
+        'name': 'Kurapika',
+        'age': 12,
+        'family': 'unknown',
+        'abilities': 'Holy Chain'
+    },
+    'hisoka': {
+        'name': 'Hisoka',
+        'age': 28,
+        'family': 'Morow',
+        'abilities': 'Bungee Gum'
+    },
+    'unknown': {
+        'name': 'unknown',
+        'age': 'unknown',
+        'family': 'unknown',
+        'abilities': 'unkown'
+    }
 
-// }
+}
 
 const hunters = [
     {"name": "killua", "age": "12","family": "Zoldyck", "specialAbility": "GodSpeed"},
@@ -61,8 +61,8 @@ app.get('/api/:name', (request, response)=> {
     console.log('Name Works')
     const hunterName = request.params.name.toLowerCase()
   
-    if(hunters[hunterName]){
-        response.json(hunters[hunterName])
+    if(hunterss[hunterName]){
+        response.json(hunterss[hunterName])
     }else{
         response.json(hunters['unknown'])
     }
